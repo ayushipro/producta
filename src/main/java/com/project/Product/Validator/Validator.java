@@ -1,4 +1,5 @@
-package com.project.Product.Validator;
+package com.project.Product.validator;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;

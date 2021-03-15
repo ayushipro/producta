@@ -1,5 +1,6 @@
 package com.project.Product.service;
 
+
 public class ProductMSException extends Exception {
 
 	public ProductMSException(String message) {

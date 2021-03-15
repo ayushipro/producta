@@ -1,4 +1,6 @@
 package com.project.Product.dto;
+
+
 import com.project.Product.entity.Product;
 
 public class ProductDTO {
@@ -146,6 +148,4 @@ public class ProductDTO {
 				+ description + ", image=" + image + ", price=" + price + ", productname=" + productname + ", rating="
 				+ rating + ", sellerid=" + sellerid + ", stock=" + stock + ", subcategory=" + subcategory + "]";
 	}	
-	
 }
-

@@ -1,5 +1,6 @@
 package com.project.Product.entity;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -68,5 +69,4 @@ public class Subscribedproduct {
 		this.quantity = quantity;
 	}
 	
-
 }
