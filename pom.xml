@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.project.Product</groupId>
-	<artifactId>Product</artifactId>
+	<artifactId>ProductSonar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Product</name>
+	<name>ProductSonar</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -35,8 +35,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-      </dependency>
-         <dependency>
+		</dependency>
+		<dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.8.0-M1</version>
@@ -55,7 +55,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-<plugin>
+			<plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.3.0.603</version>
@@ -114,7 +114,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 
             </plugin>
-
+			
 		</plugins>
 	</build>
 <repositories>
@@ -124,5 +124,4 @@
 <url>https://repo.spring.io/milestone</url>
 </repository>
 </repositories>
-
 </project>
