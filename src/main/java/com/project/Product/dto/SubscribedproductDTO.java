@@ -1,6 +1,5 @@
 package com.project.Product.dto;
 
-
 import com.project.Product.entity.Subscribedproduct;
 
 public class SubscribedproductDTO {
@@ -80,4 +79,6 @@ public class SubscribedproductDTO {
 					+ ", quantity=" + quantity + "]";
 		}
 	
-}	
+		
+}
+
