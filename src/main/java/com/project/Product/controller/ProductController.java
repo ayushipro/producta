@@ -84,7 +84,7 @@ public class ProductController {
 				productService.addProduct(productDTO);
 				response = new ResponseEntity<String>(successMessage, HttpStatus.CREATED);
 			}catch(Exception e) {
-				response = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+				response = new ResponseEntity<String>(errorMessage, HttpStatus.BAD_REQUEST);
 			}
 			return response;
 		}
@@ -126,11 +126,12 @@ public class ProductController {
 		{
 			logger.info("Fetching product by Buyer Id {}", buyerid);
 			ResponseEntity<List<SubscribedproductDTO>> response = null;
+			String errorMessage = "No such subscription found";
 			try {
 				List<SubscribedproductDTO> subscribedProducts = subscribedproductService.getSubscribedProducts(buyerid);
 				response = new ResponseEntity<List<SubscribedproductDTO>>(subscribedProducts,HttpStatus.OK);
 			}catch(Exception e){
-				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,environment.getProperty(e.getMessage()),e);
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,errorMessage);
 			}
 			return response;
 		}
@@ -147,7 +148,7 @@ public class ProductController {
 				productService.updateStock(productDTO);
 				response = new ResponseEntity<String>(successMessage,HttpStatus.CREATED);
 			}catch(Exception e) {
-				response = new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+				response = new ResponseEntity<String>(errorMessage, HttpStatus.BAD_REQUEST);
 			}
 			return response;
 		}
